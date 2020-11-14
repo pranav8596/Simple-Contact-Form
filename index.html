@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <!-- Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- Font awesome (icons) link -->
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading center">
+            <h2>Contact form</h2>
+            <p>Please fill in your information here.</p>
+        </div>
+        <div class="form">
+            <form action="php/welcome.php" method="post">
+
+                <!-- Form inputs in a tabular form -->
+                <table>
+                    <tr>
+                        <th>Your Name: <span class="required">*</span></th>
+                        <td>
+                            <select class="m-left yellow" name="tittle" required>
+                                <option value="" selected disabled>Select your tittle</option>
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Ms">Ms</option>
+                            </select>
+                            <input class="yellow m-name" type="text" name="fname" placeholder="Enter your First Name" required>
+                            <input class="yellow m-name" type="text" name="lname" placeholder="Enter your Last Name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Date of Birth:</th>
+                        <td><input class="yellow m-left" type="date" name="dateOfBirth" id="dob"></td>
+                    </tr>
+                    <tr>
+                        <th>Mobile:<span class="required">*</span></th>
+                        <td><input class="yellow m-left" type="number" name="mobile" id="mobile" placeholder="Enter your mobile number" required></td>
+                    </tr>
+                    <tr>
+                        <th>Upload your File:</th>
+                        <td><input type="file" class="m-left" name="filename"></td>
+                    </tr>
+                    <tr>
+                        <th>Your Email:<span class="required">*</span></th>
+                        <td><input class="yellow m-left" type="email" name="email" id="email" placeholder="Enter your e-mail address" required></td>
+                    </tr>
+                    <tr>
+                        <th>Your Message:</th>
+                        <td><textarea class="yellow m-left" name="message" placeholder="Enter your message here.." cols="30" rows="5" maxlength="300"></textarea></td>
+                    </tr>
+                </table>
+                <hr>
+
+                <!-- Submit and Reset buttons -->
+                <div class="center">
+                    <button class="btn" type="submit" name="submit">Submit <i class="fas fa-chevron-right"></i></button>
+                    <button class="btn" type="reset" name="reset">Reset <i class="fas fa-redo-alt"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<!-- JQuery links -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

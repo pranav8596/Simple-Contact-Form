@@ -1,0 +1,41 @@
+body::before {
+    content: "";
+    background: url(../img/welcome-bg.jpg)no-repeat center center/cover;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    width: 40%;
+    height: auto;
+    margin: auto;
+    word-break: normal;
+}
+
+.heading {
+    color: green;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.para {
+    font-size: 20px;
+    color: red;
+}
+
+.outputs {
+    color: black;
+    margin: 0px auto;
+    font-size: 20px;
+}
